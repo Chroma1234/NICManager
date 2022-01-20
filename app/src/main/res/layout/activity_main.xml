@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/blueTagBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_image_button"
+                    android:padding="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/clip"
+                    app:layout_constraintEnd_toStartOf="@+id/deliveryBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/proximitySensorTxt" />
+
+                <TextView
+                    android:id="@+id/blueTagTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Blue Tags"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/blueTagBtn"
+                    app:layout_constraintStart_toStartOf="@+id/blueTagBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/blueTagBtn" />
+
+                <ImageButton
+                    android:id="@+id/gatewayBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_image_button"
+                    android:padding="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gateway"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/proximitySensorBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/zoneLocatorTxt" />
+
+                <TextView
+                    android:id="@+id/gatewayTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Gateways"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/proximitySensorTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/gatewayBtn" />
+
+                <ImageButton
+                    android:id="@+id/deliveryBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_image_button"
+                    android:padding="20dp"
+                    android:rotationX="0"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/misc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/blueTagBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/gatewayTxt" />
+
+                <TextView
+                    android:id="@+id/deliveryNotesTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Delivery Notes"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/proximitySensorTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/deliveryBtn" />
+
+                <TextView
+                    android:id="@+id/zoneTagTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Zone Tags"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/zoneTagBtn"
+                    app:layout_constraintStart_toStartOf="@+id/zoneTagBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/zoneTagBtn" />
+
+                <ImageButton
+                    android:id="@+id/zoneTagBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_image_button"
+                    android:padding="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/zonetag"
+                    app:layout_constraintEnd_toStartOf="@+id/zoneLocatorBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+                <TextView
+                    android:id="@+id/proximitySensorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Proximity Sensors"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/proximitySensorBtn"
+                    app:layout_constraintStart_toStartOf="@+id/proximitySensorBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/proximitySensorBtn" />
+
+                <ImageButton
+                    android:id="@+id/proximitySensorBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_image_button"
+                    android:padding="20dp"
+                    android:rotationX="180"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/proxsensor"
+                    app:layout_constraintEnd_toStartOf="@+id/zoneLocatorBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/zoneTagTxt" />
+
+                <TextView
+                    android:id="@+id/zoneLocatorTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Zone Locators"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/zoneLocatorBtn"
+                    app:layout_constraintStart_toStartOf="@+id/zoneLocatorBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/zoneLocatorBtn" />
+
+                <ImageButton
+                    android:id="@+id/zoneLocatorBtn"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/custom_image_button"
+                    android:padding="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/zonelocator"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/proximitySensorBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
