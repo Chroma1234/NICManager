@@ -235,7 +235,7 @@ public class DeliveryAddActivity extends AppCompatActivity {
             try{
 
                 //Enter script URL Here
-                URL url = new URL("https://script.google.com/macros/s/AKfycbw9ornLZdQ0MKdqtDeVEu1tbbFcr2lpyFFu378szHM5ekaluoORh7Usa8X-upe2JADO/exec");
+                URL url = new URL("https://script.google.com/macros/s/AKfycbwhDT6um0ZvcRFdc0YIaP3ng6swVC0OvLsiNl6bokML_0ThvXFQmTQUUEg6jjc_i72N/exec");
 
                 JSONObject postDataParams = new JSONObject();
 

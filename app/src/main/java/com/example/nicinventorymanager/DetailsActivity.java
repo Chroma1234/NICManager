@@ -182,11 +182,11 @@ public class DetailsActivity extends AppCompatActivity  {
 
                 //Enter script URL Here
                 if(deleting == false) {
-                    url = new URL("https://script.google.com/macros/s/AKfycbzmRGJJvRQLKsvrmfVl2RUeVMyN3vbbD6ayCUnK7T5lERQks0YkDTjqqqoacE_mcCi9/exec?item=" + buttonTxt);
+                    url = new URL("https://script.google.com/macros/s/AKfycbyNWhBMAgNe2cTgDXJrn5WcKNrjoTCLylhjw8E3tB8SjtuNdwkRUyXKqyi5nO1yWzlE/exec?item=" + buttonTxt);
                 }
                 else if (deleting)
                 {
-                    url = new URL("https://script.google.com/macros/s/AKfycbzkIBs8A-I-1bxA15UuXRRhaz_pDoUMBC0zx0lTOd8cvVO99vcUcVGl5lMpaYMLr3i3/exec?item=" + buttonTxt);
+                    url = new URL("https://script.google.com/macros/s/AKfycbxMdQGrWJaxBEmErDtzbJRsyH-c6bEyrbytd0AkCE1re8w9x2g8RtwiOZU6XEPf81V8Ww/exec?item=" + buttonTxt);
                 }
 
                 JSONObject postDataParams = new JSONObject();

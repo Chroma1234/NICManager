@@ -101,7 +101,7 @@ public class DeliveryListActivity extends AppCompatActivity implements AdapterVi
         loading =  ProgressDialog.show(this,"Loading...","Please wait...",false,true);
         loading.setCancelable(false);
         loading.setCanceledOnTouchOutside(false);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://script.google.com/macros/s/AKfycbxcbsTA6YsqyRaWbFoe3LECDyVvlL6PzIxN0iIgJFrZn5cGizh_XUouQuRxi_7_JxSGOg/exec?item="+buttonTxt,
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://script.google.com/macros/s/AKfycbw8zQQ7Qm5103GrZp912v5PtcrqtYd-J0ywWGADADKQFGDEAyyrWq9eyFb_pYL1I1rTYg/exec?item="+buttonTxt,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
